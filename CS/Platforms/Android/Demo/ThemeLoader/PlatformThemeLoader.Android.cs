@@ -15,6 +15,7 @@ namespace DemoCenter.Maui.Styles.ThemeLoader {
         public PlatformThemeLoader() {}
         public MainActivity Activity { get; set; }
 
+        [Obsolete("Obsolete")]
         public void LoadTheme(ResourceDictionary theme, bool isLightTheme) {
             Android.Graphics.Color backgroundColor = ((Color)theme["BackgroundThemeColor"]).ToAndroid();
             Application.Current.Dispatcher.Dispatch(() => {
